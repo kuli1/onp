@@ -12,6 +12,15 @@ public abstract class Operation {
     this.operationStrategy = operationStrategy;
   }
 
+  /**
+   * For new operators PRIO should be like in the table below
+   *
+   *   Operator	Priorytet
+   *     (	        0
+   *     + - )	    1
+   *     / %	      2
+   *     ^	        3
+   */
   abstract int priority();
 
   abstract char getOperation();
